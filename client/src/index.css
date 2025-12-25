@@ -1,0 +1,348 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* LIGHT MODE - Winter Blue Snow Theme */
+:root {
+  --button-outline: rgba(0,0,0, .10);
+  --badge-outline: rgba(0,0,0, .05);
+  --opaque-button-border-intensity: -8;
+  --elevate-1: rgba(0,0,0, .03);
+  --elevate-2: rgba(0,0,0, .08);
+  --background: 210 60% 85%;
+  --foreground: 0 0% 0%;
+  --border: 210 40% 75%;
+  --card: 210 50% 94%;
+  --card-foreground: 0 0% 0%;
+  --card-border: 210 35% 82%;
+  --sidebar: 210 55% 90%;
+  --sidebar-foreground: 0 0% 0%;
+  --sidebar-border: 210 40% 80%;
+  --sidebar-primary: 210 70% 50%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 210 45% 85%;
+  --sidebar-accent-foreground: 0 0% 0%;
+  --sidebar-ring: 210 70% 50%;
+  --popover: 210 50% 94%;
+  --popover-foreground: 0 0% 0%;
+  --popover-border: 210 35% 80%;
+  --primary: 210 70% 50%;
+  --primary-foreground: 0 0% 0%;
+  --secondary: 200 55% 45%;
+  --secondary-foreground: 0 0% 0%;
+  --muted: 210 40% 88%;
+  --muted-foreground: 0 0% 25%;
+  --accent: 45 85% 55%;
+  --accent-foreground: 0 0% 0%;
+  --destructive: 0 72% 45%;
+  --destructive-foreground: 0 0% 0%;
+  --input: 210 35% 82%;
+  --ring: 210 70% 50%;
+  --chart-1: 0 72% 50%;
+  --chart-2: 150 45% 42%;
+  --chart-3: 45 90% 55%;
+  --chart-4: 210 65% 55%;
+  --chart-5: 280 50% 55%;
+  --font-sans: "Inter", "Geist", sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+  --radius: .5rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(210 20% 15% / 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(210 20% 15% / 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(210 20% 15% / 0.00), 0px 1px 2px -1px hsl(210 20% 15% / 0.00);
+  --shadow: 0px 2px 0px 0px hsl(210 20% 15% / 0.00), 0px 1px 2px -1px hsl(210 20% 15% / 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(210 20% 15% / 0.00), 0px 2px 4px -1px hsl(210 20% 15% / 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(210 20% 15% / 0.00), 0px 4px 6px -1px hsl(210 20% 15% / 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(210 20% 15% / 0.00), 0px 8px 10px -1px hsl(210 20% 15% / 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(210 20% 15% / 0.00);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+
+  /* Winter blue glow for special elements */
+  --glow-cyan: 0 0 20px rgba(100, 160, 220, 0.25);
+
+  /* Fallback for older browsers */
+  --sidebar-primary-border: hsl(from hsl(var(--sidebar-primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+  --sidebar-primary-border: hsl(from hsl(var(--sidebar-primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --sidebar-accent-border: hsl(from hsl(var(--sidebar-accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+  --sidebar-accent-border: hsl(from hsl(var(--sidebar-accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --primary-border: hsl(from hsl(var(--primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+  --primary-border: hsl(from hsl(var(--primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --secondary-border: hsl(from hsl(var(--secondary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+  --secondary-border: hsl(from hsl(var(--secondary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --muted-border: hsl(from hsl(var(--muted)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+  --muted-border: hsl(from hsl(var(--muted)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --accent-border: hsl(from hsl(var(--accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+  --accent-border: hsl(from hsl(var(--accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --destructive-border: hsl(from hsl(var(--destructive)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+  --destructive-border: hsl(from hsl(var(--destructive)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+}
+
+/* DARK MODE - Winter Blue Snow Theme */
+.dark {
+  --button-outline: rgba(255,255,255, .10);
+  --badge-outline: rgba(255,255,255, .05);
+  --opaque-button-border-intensity: 9;
+  --elevate-1: rgba(255,255,255, .04);
+  --elevate-2: rgba(255,255,255, .09);
+  --background: 215 35% 10%;
+  --foreground: 210 30% 92%;
+  --border: 210 30% 18%;
+  --card: 210 35% 14%;
+  --card-foreground: 210 30% 92%;
+  --card-border: 210 30% 22%;
+  --sidebar: 210 35% 12%;
+  --sidebar-foreground: 210 30% 92%;
+  --sidebar-border: 210 30% 18%;
+  --sidebar-primary: 210 70% 55%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 210 35% 22%;
+  --sidebar-accent-foreground: 210 30% 88%;
+  --sidebar-ring: 210 70% 55%;
+  --popover: 210 35% 14%;
+  --popover-foreground: 210 30% 92%;
+  --popover-border: 210 30% 22%;
+  --primary: 210 70% 55%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 200 55% 42%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 210 30% 18%;
+  --muted-foreground: 210 25% 62%;
+  --accent: 45 85% 50%;
+  --accent-foreground: 45 90% 10%;
+  --destructive: 0 72% 40%;
+  --destructive-foreground: 0 72% 98%;
+  --input: 210 30% 24%;
+  --ring: 210 70% 55%;
+  --chart-1: 0 72% 55%;
+  --chart-2: 150 50% 45%;
+  --chart-3: 45 85% 55%;
+  --chart-4: 210 70% 58%;
+  --chart-5: 280 55% 60%;
+  --shadow-2xs: 0px 2px 0px 0px hsl(210 15% 92% / 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(210 15% 92% / 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(210 15% 92% / 0.00), 0px 1px 2px -1px hsl(210 15% 92% / 0.00);
+  --shadow: 0px 2px 0px 0px hsl(210 15% 92% / 0.00), 0px 1px 2px -1px hsl(210 15% 92% / 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(210 15% 92% / 0.00), 0px 2px 4px -1px hsl(210 15% 92% / 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(210 15% 92% / 0.00), 0px 4px 6px -1px hsl(210 15% 92% / 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(210 15% 92% / 0.00), 0px 8px 10px -1px hsl(210 15% 92% / 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(210 15% 92% / 0.00);
+
+  /* Winter blue glow for special elements - stronger in dark mode */
+  --glow-cyan: 0 0 25px rgba(100, 160, 220, 0.3);
+
+  --sidebar-primary-border: hsl(from hsl(var(--sidebar-primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+  --sidebar-primary-border: hsl(from hsl(var(--sidebar-primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --sidebar-accent-border: hsl(from hsl(var(--sidebar-accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+  --sidebar-accent-border: hsl(from hsl(var(--sidebar-accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --primary-border: hsl(from hsl(var(--primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+  --primary-border: hsl(from hsl(var(--primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --secondary-border: hsl(from hsl(var(--secondary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+  --secondary-border: hsl(from hsl(var(--secondary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --muted-border: hsl(from hsl(var(--muted)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+  --muted-border: hsl(from hsl(var(--muted)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --accent-border: hsl(from hsl(var(--accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+  --accent-border: hsl(from hsl(var(--accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  --destructive-border: hsl(from hsl(var(--destructive)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+  --destructive-border: hsl(from hsl(var(--destructive)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+  --radius: 1.3rem;
+  --spacing: 0.25rem;
+  --font-mono: Menlo, monospace;
+  --font-sans: Open Sans, sans-serif;
+  --font-serif: Georgia, serif;
+  --tracking-normal: 0em;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased text-foreground;
+    background: transparent;
+  }
+}
+
+/* Glassmorphism utility for frosted cards */
+@layer utilities {
+  .glass {
+    @apply bg-card/80 backdrop-blur-md border border-card-border;
+  }
+
+  .glass-subtle {
+    @apply bg-card/60 backdrop-blur-sm border border-card-border/50;
+  }
+
+  .glow-cyan {
+    box-shadow: var(--glow-cyan);
+  }
+
+  /* Hide ugly search cancel button in Chrome until we can style it properly */
+  input[type="search"]::-webkit-search-cancel-button {
+    @apply hidden;
+  }
+
+  /* Placeholder styling for contentEditable div */
+  [contenteditable][data-placeholder]:empty::before {
+    content: attr(data-placeholder);
+    color: hsl(var(--muted-foreground));
+    pointer-events: none;
+  }
+
+  .no-default-hover-elevate {}
+
+  .no-default-active-elevate {}
+
+  .toggle-elevate::before,
+  .toggle-elevate-2::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset: 0px;
+    border-radius: inherit;
+    z-index: -1;
+  }
+
+  .toggle-elevate.toggle-elevated::before {
+    background-color: var(--elevate-2);
+  }
+
+  .border.toggle-elevate::before {
+    inset: -1px;
+  }
+
+  .hover-elevate:not(.no-default-hover-elevate),
+  .active-elevate:not(.no-default-active-elevate),
+  .hover-elevate-2:not(.no-default-hover-elevate),
+  .active-elevate-2:not(.no-default-active-elevate) {
+    position: relative;
+    z-index: 0;
+  }
+
+  .hover-elevate:not(.no-default-hover-elevate)::after,
+  .active-elevate:not(.no-default-active-elevate)::after,
+  .hover-elevate-2:not(.no-default-hover-elevate)::after,
+  .active-elevate-2:not(.no-default-active-elevate)::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset: 0px;
+    border-radius: inherit;
+    z-index: 999;
+  }
+
+  .hover-elevate:hover:not(.no-default-hover-elevate)::after,
+  .active-elevate:active:not(.no-default-active-elevate)::after {
+    background-color: var(--elevate-1);
+  }
+
+  .hover-elevate-2:hover:not(.no-default-hover-elevate)::after,
+  .active-elevate-2:active:not(.no-default-active-elevate)::after {
+    background-color: var(--elevate-2);
+  }
+
+  .border.hover-elevate:not(.no-hover-interaction-elevate)::after,
+  .border.active-elevate:not(.no-active-interaction-elevate)::after,
+  .border.hover-elevate-2:not(.no-hover-interaction-elevate)::after,
+  .border.active-elevate-2:not(.no-active-interaction-elevate)::after,
+  .border.hover-elevate:not(.no-hover-interaction-elevate)::after {
+    inset: -1px;
+  }
+}
+
+/* Christmas Snowfall Animation */
+@keyframes snowfall {
+  0% {
+    transform: translateY(-10vh) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) translateX(20px);
+    opacity: 0.3;
+  }
+}
+
+@keyframes snowfall-sway {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+}
+
+.snowflake {
+  position: fixed;
+  top: -10px;
+  color: rgba(200, 220, 255, 0.35);
+  font-size: 1rem;
+  pointer-events: none;
+  z-index: -1;
+  animation: snowfall linear infinite;
+  text-shadow: 0 0 5px rgba(200, 220, 255, 0.3);
+}
+
+.snowflake::before {
+  content: "*";
+  display: block;
+  animation: snowfall-sway 3s ease-in-out infinite;
+}
+
+.snowflake:nth-child(1) { left: 5%; animation-duration: 8s; animation-delay: 0s; font-size: 0.8rem; }
+.snowflake:nth-child(2) { left: 15%; animation-duration: 12s; animation-delay: 1s; font-size: 1.2rem; }
+.snowflake:nth-child(3) { left: 25%; animation-duration: 10s; animation-delay: 2s; font-size: 0.6rem; }
+.snowflake:nth-child(4) { left: 35%; animation-duration: 14s; animation-delay: 0.5s; font-size: 1rem; }
+.snowflake:nth-child(5) { left: 45%; animation-duration: 9s; animation-delay: 3s; font-size: 0.9rem; }
+.snowflake:nth-child(6) { left: 55%; animation-duration: 11s; animation-delay: 1.5s; font-size: 1.1rem; }
+.snowflake:nth-child(7) { left: 65%; animation-duration: 13s; animation-delay: 2.5s; font-size: 0.7rem; }
+.snowflake:nth-child(8) { left: 75%; animation-duration: 10s; animation-delay: 0.8s; font-size: 1.3rem; }
+.snowflake:nth-child(9) { left: 85%; animation-duration: 15s; animation-delay: 4s; font-size: 0.5rem; }
+.snowflake:nth-child(10) { left: 95%; animation-duration: 8s; animation-delay: 2s; font-size: 1rem; }
+.snowflake:nth-child(11) { left: 10%; animation-duration: 11s; animation-delay: 3.5s; font-size: 0.8rem; }
+.snowflake:nth-child(12) { left: 30%; animation-duration: 9s; animation-delay: 1.2s; font-size: 1.4rem; }
+.snowflake:nth-child(13) { left: 50%; animation-duration: 13s; animation-delay: 4.5s; font-size: 0.6rem; }
+.snowflake:nth-child(14) { left: 70%; animation-duration: 10s; animation-delay: 0.3s; font-size: 1.1rem; }
+.snowflake:nth-child(15) { left: 90%; animation-duration: 12s; animation-delay: 2.8s; font-size: 0.9rem; }
+
+/* Christmas decorations */
+.christmas-lights {
+  position: relative;
+}
+
+.christmas-lights::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, 
+    hsl(0 72% 50%) 0%, hsl(0 72% 50%) 10%,
+    transparent 10%, transparent 15%,
+    hsl(150 50% 45%) 15%, hsl(150 50% 45%) 25%,
+    transparent 25%, transparent 30%,
+    hsl(45 90% 55%) 30%, hsl(45 90% 55%) 40%,
+    transparent 40%, transparent 45%,
+    hsl(0 72% 50%) 45%, hsl(0 72% 50%) 55%,
+    transparent 55%, transparent 60%,
+    hsl(150 50% 45%) 60%, hsl(150 50% 45%) 70%,
+    transparent 70%, transparent 75%,
+    hsl(45 90% 55%) 75%, hsl(45 90% 55%) 85%,
+    transparent 85%, transparent 90%,
+    hsl(0 72% 50%) 90%, hsl(0 72% 50%) 100%
+  );
+  border-radius: 0 0 2px 2px;
+}
