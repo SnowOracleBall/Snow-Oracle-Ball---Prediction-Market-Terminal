@@ -12,7 +12,7 @@
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)](https://expressjs.com/)
 
-[Live Demo](https://snow-oracle-ball.replit.app) | [Features](#features) | [Installation](#installation) | [Tech Stack](#tech-stack)
+[Dapps](https://app.snow-oracleball.com/) | [Features](#features) | [Installation](#installation) | [Tech Stack](#tech-stack)
 
 </div>
 
@@ -20,7 +20,7 @@
 
 ## Overview
 
-Snow Oracle Ball is a **"Terminal for Probabilities"** - a professional prediction market aggregator with a stunning winter wonderland theme. Users can explore prediction markets, compare probabilities across platforms, track positions, and get AI-powered insights.
+Snow Oracle Ball is a "Terminal for Probabilities" - a professional prediction market aggregator with a stunning winter wonderland theme. Users can explore prediction markets, compare probabilities across platforms, track positions, and get AI-powered insights.
 
 ### Important Positioning
 
@@ -245,6 +245,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Built with love and snowflakes**
 
-Made by [Your Name](https://github.com/yourusername)
+Made by [Snow Oracle Ball](https://github.com/SnowOracleBall)
 
 </div>
